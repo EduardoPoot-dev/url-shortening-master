@@ -6,12 +6,14 @@
 
   --white: hsl(255, 100%, 100%);
   --gray: hsl(0, 0%, 75%);
-  --grayish-violet: hsl(257, 7%, 63%); 
+  --grayish-violet: hsl(257, 7%, 63%);
   --very-dark-blue: hsl(255, 11%, 22%);
   --very-dark-violet: hsl(260, 8%, 14%);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   box-sizing: border-box;
 }
@@ -25,7 +27,7 @@ html {
 }
 
 body,
-input, 
+input,
 button,
 a {
   font-family: "Poppins", sans-serif;
@@ -307,7 +309,7 @@ ul {
   .form__bgMobile {
     display: none;
   }
-  
+
   .form__bgDesktop {
     display: block;
   }
@@ -359,7 +361,7 @@ ul {
   .form__field {
     grid-column: 1 / 4;
   }
-  
+
   .form__submit {
     grid-column: 4 / 5;
     margin-top: 0;
@@ -421,19 +423,19 @@ ul {
     align-items: center;
     padding: 3rem;
   }
-  
+
   .result__left {
     border-bottom: none;
     padding: 0;
   }
-  
+
   .result__right {
     display: flex;
     align-items: center;
     gap: 2rem;
     padding: 0;
   }
-  
+
   .result__btn {
     margin-top: 0;
     padding: 1rem 4rem;
@@ -487,7 +489,7 @@ ul {
 }
 
 .stadistic__cards::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 0.8rem;
@@ -541,7 +543,7 @@ ul {
 @media (min-width: 900px) {
   .card__imgContainer {
     margin: 0;
-    margin-top: -6rem;  
+    margin-top: -6rem;
   }
 }
 
@@ -599,7 +601,7 @@ ul {
   .bgBoost__desktop {
     display: block;
   }
-  
+
   .bgBoost__mobile {
     display: none;
   }
@@ -611,7 +613,7 @@ ul {
 }
 
 .boost__title {
-  color: var(--gray);
+  color: var(--white);
   margin-top: 0;
 }
 
@@ -657,7 +659,7 @@ ul {
   .footer {
     padding: 5rem;
   }
-  
+
   .footer__container {
     flex-direction: row;
     justify-content: space-between;
@@ -723,4 +725,15 @@ ul {
   .footer__title {
     margin-top: 0;
   }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
